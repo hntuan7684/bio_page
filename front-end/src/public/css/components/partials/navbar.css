@@ -1,0 +1,95 @@
+.navbar {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con */
+    align-items: center; /* Căn giữa các mục theo chiều dọc */
+    padding: 10px 20px; /* Thêm padding xung quanh navbar */
+    background-color: #333333; /* Màu nền của navbar */
+    color: white; /* Màu chữ */
+}
+
+
+.navbar nav {
+    justify-content: end;
+}
+
+.navbar .logo-container {
+    flex: 1;
+    justify-content: start;
+    margin-inline-start: 30px;
+}
+
+.navbar ul {
+    display: flex; /* Làm cho các mục trong ul hiển thị theo hàng ngang */
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng mặc định */
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+    text-align: center;
+    justify-content: end;
+    align-items: center; 
+}
+
+.navbar li {
+    margin-inline-end: 30px; /* Khoảng cách giữa các mục trong navbar */
+}
+
+.navbar li:last-child {
+    margin-inline-end: 0; /* Không có khoảng cách sau mục cuối */
+}
+
+.navbar a {
+    color: white; /* Màu chữ của các liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-size: 16px; /* Kích thước font */
+}
+
+.navbar a:hover {
+    color: #FFD700; /* Màu chữ khi hover */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.navbar a:last-child:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.register-container {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.register-container div {
+    font-weight: 700;
+    
+}
+
+.register-container:hover {
+    background-color: #FFD700;
+    color: #fff;
+    border: none;
+}
+
+.language-container {
+    padding: 8px;
+}
+
+.language-container select {
+    background-color: #333333; /* Màu nền của thẻ select */
+    color: white; /* Màu chữ */
+    border: 1px solid #fff; /* Viền trắng cho thẻ select */
+    padding: 5px 10px; /* Khoảng cách giữa viền và nội dung */
+    font-size: 12px; /* Kích thước font chữ */
+    border-radius: 4px; /* Bo góc cho thẻ select */
+    appearance: none; /* Loại bỏ style mặc định của thẻ select (cho các trình duyệt hỗ trợ) */
+    -webkit-appearance: none; /* Loại bỏ style mặc định trên các trình duyệt WebKit như Safari */
+    -moz-appearance: none; /* Loại bỏ style mặc định trên Firefox */
+}
+
+.language-container select:focus {
+    outline: none; /* Loại bỏ outline khi thẻ select được chọn */
+}
+
+.language-container img {
+    padding: 0px 10px;
+    margin-block-start: 10px;
+}
