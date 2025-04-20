@@ -1,95 +1,96 @@
 .navbar {
-    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con */
-    align-items: center; /* Căn giữa các mục theo chiều dọc */
-    padding: 10px 20px; /* Thêm padding xung quanh navbar */
-    background-color: #333333; /* Màu nền của navbar */
-    color: white; /* Màu chữ */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #333;
+    color: white;
+    padding: 0 20px; 
+    block-size: 60px; 
 }
-
 
 .navbar nav {
-    justify-content: end;
-}
-
-.navbar .logo-container {
-    flex: 1;
-    justify-content: start;
-    margin-inline-start: 30px;
-}
-
-.navbar ul {
-    display: flex; /* Làm cho các mục trong ul hiển thị theo hàng ngang */
-    list-style: none; /* Loại bỏ dấu chấm đầu dòng mặc định */
-    margin: 0; /* Loại bỏ margin mặc định */
-    padding: 0; /* Loại bỏ padding mặc định */
-    text-align: center;
-    justify-content: end;
+    display: grid;
+    grid-template-columns: 30% 25% 45%; 
+    inline-size: 100%;
     align-items: center; 
 }
 
-.navbar li {
-    margin-inline-end: 30px; /* Khoảng cách giữa các mục trong navbar */
+.logo-container {
+    padding: 3px 0;
+    margin-inline-start: 40px; 
+    display: flex;
+    align-items: center;
 }
 
-.navbar li:last-child {
-    margin-inline-end: 0; /* Không có khoảng cách sau mục cuối */
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    inline-size: 100%; 
 }
 
-.navbar a {
-    color: white; /* Màu chữ của các liên kết */
-    text-decoration: none; /* Loại bỏ gạch chân */
-    font-size: 16px; /* Kích thước font */
+.navbar-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
 }
 
-.navbar a:hover {
-    color: #FFD700; /* Màu chữ khi hover */
-    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+.navbar-tab li {
+    padding: 5px 15px;
+    cursor: pointer; 
 }
 
-.navbar a:last-child:hover {
-    color: #fff;
+.navbar-tab li:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.navbar-tab a {
+    text-decoration: none;
+    font-size: 16px;
     font-weight: 600;
+    color: white;
 }
-
 
 .register-container {
+    position: relative;
+    padding: 10px 20px;
     border: 1px solid #fff;
-    border-radius: 10px;
-    padding: 10px 25px;
-}
-
-.register-container div {
-    font-weight: 700;
-    
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #444;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
 }
 
 .register-container:hover {
-    background-color: #FFD700;
     color: #fff;
-    border: none;
 }
 
 .language-container {
-    padding: 8px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 2px; 
 }
 
 .language-container select {
-    background-color: #333333; /* Màu nền của thẻ select */
-    color: white; /* Màu chữ */
-    border: 1px solid #fff; /* Viền trắng cho thẻ select */
-    padding: 5px 10px; /* Khoảng cách giữa viền và nội dung */
-    font-size: 12px; /* Kích thước font chữ */
-    border-radius: 4px; /* Bo góc cho thẻ select */
-    appearance: none; /* Loại bỏ style mặc định của thẻ select (cho các trình duyệt hỗ trợ) */
-    -webkit-appearance: none; /* Loại bỏ style mặc định trên các trình duyệt WebKit như Safari */
-    -moz-appearance: none; /* Loại bỏ style mặc định trên Firefox */
-}
-
-.language-container select:focus {
-    outline: none; /* Loại bỏ outline khi thẻ select được chọn */
+    block-size: 30px;
+    padding: 2px 5px;
+    margin-inline-end: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 
 .language-container img {
-    padding: 0px 10px;
-    margin-block-start: 10px;
+    inline-size: 30px;
+    margin-inline-start: 5px; 
 }
