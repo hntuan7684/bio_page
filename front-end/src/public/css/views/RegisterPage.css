@@ -1,5 +1,8 @@
-.container {
-    background-image: url('../../icon/register_bg.jpg');
+.RegisterPage {
+    background-image: url('../../img/bg_img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    block-size: 100%;
+    inline-size: 100%;
+    padding: 0;
 }

@@ -3,6 +3,7 @@
     justify-content: space-between; 
     align-items: center; 
     background-color: #333;
+    opacity: 1;
     color: white;
     padding: 0 20px; 
     block-size: 60px; 
@@ -20,6 +21,12 @@
     margin-inline-start: 40px; 
     display: flex;
     align-items: center;
+    opacity: 1;
+}
+
+.logo-container img {
+    inline-size: 80px;
+    opacity: 1;
 }
 
 .tab-container {
@@ -69,6 +76,11 @@
     cursor: pointer;
 }
 
+.register-container a {
+    color: white;
+    text-decoration: none;
+}
+
 .register-container:hover {
     color: #fff;
 }
@@ -91,6 +103,6 @@
 }
 
 .language-container img {
-    inline-size: 30px;
-    margin-inline-start: 5px; 
+    inline-size: 25px;
+    margin-inline-start: 0px; 
 }
